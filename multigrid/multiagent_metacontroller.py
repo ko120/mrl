@@ -311,6 +311,16 @@ class MultiAgent():
                     viz_data=viz_data)
 
         env.close()
+
+        # Save and upload final model to wandb
+        save_path = getattr(self.config, 'save_path', None)
+        final_checkpoint = self.algo.save(save_path) if save_path else self.algo.save()
+        print(f"Final model saved: {final_checkpoint}")
+        artifact = wandb.Artifact(name="final_model", type="model")
+        artifact.add_dir(final_checkpoint)
+        wandb.log_artifact(artifact)
+        print("Final model uploaded to wandb.")
+
         self.algo.stop()
 
     def log_one_episode(self, episode, t, rewards):
