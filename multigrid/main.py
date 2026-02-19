@@ -35,6 +35,9 @@ def parse_args():
         '--load_checkpoint_from', type=str, default=None,
         help="Path to find model checkpoints to load")
     parser.add_argument(
+        '--save_path', type=str, default=None,
+        help="Directory to save model checkpoints. Defaults to Ray's ~/ray_results/.")
+    parser.add_argument(
         '--wandb_project', type=str, default='multigrid-ippo',
         help="Name of wandb project.")
     parser.add_argument(
@@ -74,6 +77,8 @@ def main(args):
 
     if args.algorithm:
         config.algorithm = args.algorithm
+    if args.save_path:
+        config.save_path = args.save_path
 
     # Ensure if you're logging to wandb, it's to the right project
     if not args.debug and not args.visualize:

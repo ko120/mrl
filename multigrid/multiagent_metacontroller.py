@@ -101,7 +101,7 @@ class MultiAgent():
                         "kernel_size": config.kernel_size,
                         "fc_direction": config.fc_direction,
                         "n_agents": env.n_agents,
-                        "algorithm": getattr(config, "algorithm", "MAPPO"),
+                        "algorithm": getattr(config, "algorithm", "IPPO"),
                     },
                 ),
             )
@@ -294,7 +294,8 @@ class MultiAgent():
 
             # Save checkpoint
             if self.total_episodes % save_every < episodes_this_iter:
-                checkpoint_dir = self.algo.save()
+                save_path = getattr(self.config, 'save_path', None)
+                checkpoint_dir = self.algo.save(save_path) if save_path else self.algo.save()
                 print(f"Checkpoint saved at episode ~{self.total_episodes}: {checkpoint_dir}")
 
             # Visualization episode
@@ -329,7 +330,8 @@ class MultiAgent():
 
     def save_model_checkpoints(self, episode):
         if episode % self.config.save_model_episode == 0 and episode > 0:
-            checkpoint_dir = self.algo.save()
+            save_path = getattr(self.config, 'save_path', None)
+            checkpoint_dir = self.algo.save(save_path) if save_path else self.algo.save()
             print(f"Checkpoint saved at episode {episode}: {checkpoint_dir}")
 
     def print_terminal_output(self, episode, total_reward):
