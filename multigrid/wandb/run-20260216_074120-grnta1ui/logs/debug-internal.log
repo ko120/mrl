@@ -1,0 +1,11 @@
+{"time":"2026-02-16T07:41:20.601364739Z","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-16T07:41:20.769317893Z","level":"INFO","msg":"stream: created new stream","id":"grnta1ui"}
+{"time":"2026-02-16T07:41:20.769446779Z","level":"INFO","msg":"stream: started","id":"grnta1ui"}
+{"time":"2026-02-16T07:41:20.769426945Z","level":"INFO","msg":"handler: started","stream_id":"grnta1ui"}
+{"time":"2026-02-16T07:41:20.769468846Z","level":"INFO","msg":"writer: started","stream_id":"grnta1ui"}
+{"time":"2026-02-16T07:41:20.770462341Z","level":"INFO","msg":"sender: started","stream_id":"grnta1ui"}
+{"time":"2026-02-16T08:02:46.680170366Z","level":"INFO","msg":"stream: closing","id":"grnta1ui"}
+{"time":"2026-02-16T08:02:47.213552956Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-16T08:02:47.346847048Z","level":"INFO","msg":"handler: closed","stream_id":"grnta1ui"}
+{"time":"2026-02-16T08:02:47.347001771Z","level":"INFO","msg":"sender: closed","stream_id":"grnta1ui"}
+{"time":"2026-02-16T08:02:47.347034357Z","level":"INFO","msg":"stream: closed","id":"grnta1ui"}

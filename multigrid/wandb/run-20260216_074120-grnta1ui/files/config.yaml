@@ -1,0 +1,179 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        code_path: code/main.py
+        e:
+            tvrnb30e1yi4dz3z4m1ua92dpnozuupv:
+                codePath: main.py
+                codePathLocal: main.py
+                cpu_count: 40
+                cpu_count_logical: 80
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "368766496768"
+                        used: "35725123584"
+                email: ko120@purdue.edu
+                executable: /home/brianko/miniconda3/envs/rlib/bin/python
+                git:
+                    commit: 23e63742707fa00842fbbf9c6e70b5360e59bccd
+                    remote: https://github.com/natashamjaques/multigrid.git
+                gpu: Tesla V100-SXM2-16GB
+                gpu_count: 4
+                gpu_nvidia:
+                    - architecture: Volta
+                      cudaCores: 5120
+                      memoryTotal: "17179869184"
+                      name: Tesla V100-SXM2-16GB
+                      uuid: GPU-c1336362-1a12-45dd-8d3f-d2011d6f51ae
+                    - architecture: Volta
+                      cudaCores: 5120
+                      memoryTotal: "17179869184"
+                      name: NVIDIA Graphics Device
+                      uuid: GPU-1c6effec-22d4-17fd-fdf1-7ce10166132e
+                    - architecture: Volta
+                      cudaCores: 5120
+                      memoryTotal: "17179869184"
+                      name: Tesla V100-SXM2-16GB
+                      uuid: GPU-698a9283-60ee-cc64-7d87-4e33f6fabc82
+                    - architecture: Volta
+                      cudaCores: 5120
+                      memoryTotal: "17179869184"
+                      name: Tesla V100-SXM2-16GB
+                      uuid: GPU-1ad11bb9-50d4-6b9d-22f8-fc8c33180e56
+                host: huan-c4140-server-3
+                memory:
+                    total: "404272680960"
+                os: Linux-6.8.0-90-generic-x86_64-with-glibc2.39
+                program: /home/brianko/test/multigrid/main.py
+                python: CPython 3.11.0
+                root: /home/brianko/test/multigrid
+                startedAt: "2026-02-16T07:41:20.375832Z"
+                writerId: tvrnb30e1yi4dz3z4m1ua92dpnozuupv
+        m:
+            - "1": episode/x_axis
+              "6":
+                - 3
+              "7": []
+            - "1": step/x_axis
+              "6":
+                - 3
+              "7": []
+            - "2": step/*
+              "5": 2
+              "6":
+                - 1
+              "7": []
+            - "2": episode/*
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.11.0
+        t:
+            "1":
+                - 1
+                - 30
+            "2":
+                - 1
+                - 30
+            "3":
+                - 7
+                - 16
+                - 17
+            "4": 3.11.0
+            "5": 0.25.0
+            "12": 0.25.0
+            "13": linux-x86_64
+base_save_path:
+    value: ""
+batch_size:
+    value: 256
+clip_param:
+    value: 0.2
+cumulants:
+    value: 64
+domain:
+    value: MultiGrid-Cluttered-Fixed-15x15
+dqn_loss_weight:
+    value: 1
+entropy_coeff:
+    value: 0.01
+eps_decay:
+    value: 1000000
+eps_end:
+    value: 0.01
+eps_start:
+    value: 1
+experiment_name:
+    value: MultiGrid
+fc:
+    value: 256
+fc_direction:
+    value: 8
+filters:
+    value: 32
+gamma:
+    value: 0.99
+grad_clip:
+    value: 0.5
+initial_memory:
+    value: 2000
+kernel_size:
+    value: 3
+lambda_:
+    value: 0.95
+load_model_path:
+    value: models/ppo_seed_42_domain_MultiGrid-Cluttered-Fixed-15x15_version_default
+load_model_start_path:
+    value: models/ppo
+log_episode:
+    value: 100
+log_step:
+    value: 1000
+lr:
+    value: 0.0003
+memory_size:
+    value: 5000000
+metacontroller:
+    value: multiagent
+minibatch_size:
+    value: 128
+mode:
+    value: ppo
+model_name:
+    value: ppo_seed_42_domain_MultiGrid-Cluttered-Fixed-15x15_version_default
+model_others:
+    value: false
+n_actions:
+    value: 7
+n_episodes:
+    value: 100000
+num_env_runners:
+    value: 0
+num_epochs:
+    value: 4
+print_every:
+    value: 50
+rl_test_episodes:
+    value: 100000
+save_model_episode:
+    value: 5000
+seed:
+    value: 42
+target_update:
+    value: 1000
+train_batch_size:
+    value: 4000
+update_every:
+    value: 50
+use_gae:
+    value: true
+version:
+    value: default
+vf_loss_coeff:
+    value: 0.5
+visualize_every:
+    value: 10000
+wandb_project:
+    value: multigrid-ippo-MultiGrid-Cluttered-Fixed-15x15

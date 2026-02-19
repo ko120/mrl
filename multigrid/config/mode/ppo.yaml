@@ -1,0 +1,29 @@
+# PPO mode configuration (IPPO with shared policy - CTDE)
+mode: "ppo"
+load_model_start_path: "models/ppo"
+
+# PPO training params
+gamma: 0.99
+lr: 0.001
+train_batch_size: 4000
+minibatch_size: 256
+num_epochs: 4
+clip_param: 0.2
+vf_loss_coeff: 0.5
+entropy_coeff: 0.01
+lambda_: 0.95
+use_gae: True
+grad_clip: 0.5
+
+# CTDE: All agents share one policy (centralized training, decentralized execution)
+model_others: False
+
+# Environment runners
+num_env_runners: 0
+
+# Logging / checkpointing
+log_episode: 100
+print_every: 50
+save_model_episode: 10000
+visualize_every: 30000
+n_episodes: 100000

@@ -1,0 +1,666 @@
+diff --git a/config/default.yaml b/config/default.yaml
+index a482787..feca185 100644
+--- a/config/default.yaml
++++ b/config/default.yaml
+@@ -1,5 +1,4 @@
+ seed: 1
+-
+ # RL params
+ gamma: 0.99
+ rl_test_episodes: 100000
+@@ -19,13 +18,13 @@ n_episodes: 50000
+ update_every: 50
+ 
+ # Logistics params
+-save_model_episode: 10000
+-visualize_every: 10000  # how many episodes before making a video
+-log_episode: 500
+-log_step: 1000
++# save_model_episode: 10000
++# visualize_every: 10000  # how many episodes before making a video
++# log_episode: 500
++# log_step: 1000
+ version: "default"
+-print_every: 10
+-base_save_path: ''
++# print_every: 10
++# base_save_path: ''
+ 
+ # Loss weights
+ dqn_loss_weight: 1
+diff --git a/main.py b/main.py
+index a9d5491..6a83fb3 100644
+--- a/main.py
++++ b/main.py
+@@ -5,48 +5,55 @@ import numpy as np
+ import wandb
+ 
+ import utils
++from multiagent_metacontroller import MultiAgent
++
+ 
+ def parse_args():
+-  parser = argparse.ArgumentParser()
+-  parser.add_argument(
+-      '--env_name', type=str, default='MultiGrid-Cluttered-Fixed-15x15',
+-      help='Name of environment.')
+-  parser.add_argument(
+-      '--mode', type=str, default='ppo',
+-      help="Name of experiment. Can be 'ppo'")
+-  parser.add_argument(
+-      '--debug', action=argparse.BooleanOptionalAction,
+-      help="If used will disable wandb logging.")
+-  parser.add_argument(
+-      '--seed', type=int, default=None,
+-      help="Random seed.")
+-  parser.add_argument(
+-      '--keep_training', action=argparse.BooleanOptionalAction,
+-      help="If used will continue training from previous checkpoint.")
+-  parser.add_argument(
+-      '--visualize', action=argparse.BooleanOptionalAction,
+-      help="If used will disable wandb logging.")
+-  parser.add_argument(
+-      '--video_dir', type=str, default='videos',
+-      help="Name of location to store videos.")
+-  parser.add_argument(
+-      '--load_checkpoint_from',  type=str, default=None,
+-      help="Path to find model checkpoints to load")
+-  parser.add_argument(
+-        '--wandb_project', type=str, default='',
+-        help="Name of wandb project. Choose from 'multiagent_copying_ii' for 2 experts or 'multiagent_copying_1_expert_1_novice'. ")
+-
+-  return parser.parse_args()
++    parser = argparse.ArgumentParser()
++    parser.add_argument(
++        '--env_name', type=str, default='MultiGrid-Cluttered-Fixed-15x15',
++        help='Name of environment.')
++    parser.add_argument(
++        '--mode', type=str, default='ppo',
++        help="Name of experiment. Can be 'ppo'")
++    parser.add_argument(
++        '--debug', action=argparse.BooleanOptionalAction,
++        help="If used will disable wandb logging.")
++    parser.add_argument(
++        '--seed', type=int, default=42,
++        help="Random seed.")
++    parser.add_argument(
++        '--keep_training', action=argparse.BooleanOptionalAction,
++        help="If used will continue training from previous checkpoint.")
++    parser.add_argument(
++        '--visualize', action=argparse.BooleanOptionalAction,
++        help="If used will run visualization only.")
++    parser.add_argument(
++        '--video_dir', type=str, default='videos',
++        help="Name of location to store videos.")
++    parser.add_argument(
++        '--load_checkpoint_from', type=str, default=None,
++        help="Path to find model checkpoints to load")
++    parser.add_argument(
++        '--wandb_project', type=str, default='multigrid-ippo',
++        help="Name of wandb project.")
++    parser.add_argument(
++        '--algorithm', type=str, default=None, choices=['IPPO', 'MAPPO'],
++        help="Algorithm: IPPO (local obs) or MAPPO (shared direction info). Overrides config.")
++
++    return parser.parse_args()
++
+ 
+ def get_metacontroller_class(config):
+-    raise NotImplementedError("Implement and import a MetaController class!")
++    return MultiAgent
++
+ 
+-def initialize(mode, env_name, debug, visualize, seed, with_expert, wandb_project):
++def initialize(mode, env_name, debug, visualize, seed, wandb_project):
+     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+ 
+     config = utils.generate_parameters(
+-      mode=mode, domain=env_name, debug=(debug or visualize), 
+-      seed=seed, with_expert=with_expert, wandb_project=wandb_project)
++        mode=mode, domain=env_name, debug=(debug or visualize),
++        seed=seed, wandb_project=wandb_project)
+ 
+     # Set seeds
+     random.seed(config.seed)
+@@ -59,39 +66,39 @@ def initialize(mode, env_name, debug, visualize, seed, with_expert, wandb_projec
+ 
+     return device, config, env, metacontroller_class
+ 
++
+ def main(args):
+     device, config, env, metacontroller_class = initialize(
+-      args.mode, args.env_name, args.debug, args.visualize, args.seed, args.with_expert, args.wandb_project)
++        args.mode, args.env_name, args.debug, args.visualize,
++        args.seed, args.wandb_project)
+ 
+-    # Ensure if you're logging to wandb, it's to the right wandb
+-    if not args.debug and not args.visualize:  # Real run that logs to wandb
+-      if not args.wandb_project:
+-        print('ERROR: when logging to wandb, must specify a valid wandb project.')
+-        exit(1)
++    if args.algorithm:
++        config.algorithm = args.algorithm
+ 
+-      current_wandb_projects = ['']  # Add your wandb project here
+-      if str(args.wandb_project) not in current_wandb_projects:
+-          print('ERROR: wandb project not in current projects. '
+-                'Change the project name or add your new project to the current projects in current_wandb_projects. '
+-                'Current projects are:', current_wandb_projects)
+-          exit(1)
++    # Ensure if you're logging to wandb, it's to the right project
++    if not args.debug and not args.visualize:
++        if not args.wandb_project:
++            print('ERROR: when logging to wandb, must specify a valid wandb project.')
++            exit(1)
+ 
+     if args.visualize:
+-      agent = metacontroller_class(config, env, device, with_expert=args.with_expert, training=False)
+-      agent.load_models(model_path=args.load_checkpoint_from)
+-      agent.visualize(env, args.mode, args.video_dir)
+-
+-      print('A video of the trained policies being tested in the environment'
+-            'has been generated and is located in', config.load_model_path)
+-      exit(0)
+-    
++        agent = metacontroller_class(
++            config, env, device, training=False)
++        agent.load_models(model_path=args.load_checkpoint_from)
++        agent.visualize(env, args.mode, args.video_dir)
++        print('A video of the trained policies being tested in the environment '
++              'has been generated.')
++        exit(0)
++
+     # Train Model
+-    agent = metacontroller_class(config, env, device, with_expert=args.with_expert, debug=args.debug)
++    agent = metacontroller_class(
++        config, env, device, debug=args.debug)
+ 
+-    if args.keep_training:
+-      agent.load_models(model_path=args.load_checkpoint_from)
++    if args.keep_training and args.load_checkpoint_from:
++        agent.load_models(model_path=args.load_checkpoint_from)
+ 
+     agent.train(env)
+ 
++
+ if __name__ == '__main__':
+-    main(parse_args())
+\ No newline at end of file
++    main(parse_args())
+diff --git a/multiagent_metacontroller.py b/multiagent_metacontroller.py
+index 1e29480..e135b7a 100644
+--- a/multiagent_metacontroller.py
++++ b/multiagent_metacontroller.py
+@@ -1,58 +1,316 @@
+-from copy import deepcopy
+-import gym
+-from itertools import count
+-import math
+-import matplotlib.pyplot as plt
++"""Multi-agent metacontroller using RLlib PPO with shared policy (CTDE).
++
++Centralized Training, Decentralized Execution:
++- All agents share a single policy (centralized training via parameter sharing)
++- Each agent acts independently using only its own observation (decentralized execution)
++
++Uses Ray RLlib's PPO algorithm with multi-agent configuration.
++"""
++
+ import numpy as np
+ import os
+-from PIL import Image
+-import torch
+-from torch.distributions.categorical import Categorical
+-import torch.optim as optim
+-import torch.nn.functional as F
+-import torch.nn as nn
+ import wandb
+ 
+-from utils import plot_single_frame, make_video, extract_mode_from_path
++import ray
++from ray.rllib.algorithms.ppo import PPOConfig
++from ray.rllib.core.rl_module.rl_module import RLModuleSpec
++from ray.tune.registry import register_env
++
++from networks.multigrid_ppo_rl_module import MultiGridPPORLModule
++
++from multigrid_rllib_env import MultiGridRLlibEnv
++from utils import plot_single_frame, make_video
++import pdb 
+ 
+ class MultiAgent():
+-    """This is a meta agent that creates and controls several sub agents. If model_others is True,
+-    Enables sharing of buffer experience data between agents to allow them to learn models of the 
+-    other agents. """
++    """Meta-agent that uses RLlib PPO to train multiple agents with a shared
++    policy (CTDE - Centralized Training, Decentralized Execution).
++
++    All agents share a single policy network. During training, experience from
++    all agents is pooled to train that shared policy. During execution, each
++    agent uses only its own observation to select actions.
++    """
+ 
+     def __init__(self, config, env, device, training=True, with_expert=None, debug=False):
+-        raise NotImplementedError("How should I initialize this class?")
+-    
+-    def run_one_episode(self, env, episode, log=True, train=True, save_model=True, visualize=False):
+-        raise NotImplementedError("What should be initialized at the beginning of an episode?")
++        self.config = config
++        self.debug = debug
++        self.device = device
++        self.n_agents = env.n_agents
++        self.model_others = getattr(config, 'model_others', False)
++        self.use_local_obs = getattr(config, 'algorithm', 'MAPPO') == 'IPPO'
++        self.total_steps = 0
++        self.total_episodes = 0
++
++        # Store the raw env for visualization (RLlib manages its own env copies)
++        self._raw_env = env
++
++        # Initialize Ray
++        if not ray.is_initialized():
++            ray.init(ignore_reinit_error=True, num_cpus=4)
++
++        # Register the multigrid env with RLlib
++        env_name = getattr(config, 'domain', 'MultiGrid-Cluttered-Fixed-15x15')
++        use_local_obs = self.use_local_obs
++        register_env(
++            "multigrid",
++            lambda cfg: MultiGridRLlibEnv({
++                "env_name": env_name,
++                "use_local_obs": use_local_obs,
++            }),
++        )
++
++        # Configure RLlib PPO - all agents share one policy (CTDE)
++        num_env_runners = getattr(config, 'num_env_runners', 1)
++        self.algo_config = (
++            PPOConfig()
++            .api_stack(
++                enable_rl_module_and_learner=True,
++                enable_env_runner_and_connector_v2=True,
++            )
++            .environment("multigrid")
++            .env_runners(
++                num_env_runners=num_env_runners,
++            )
++            .learners(
++                num_gpus_per_learner=1,  # Use 1 GPU for training
++            )
++            .training(
++                lr=getattr(config, 'lr', 0.0003),
++                gamma=getattr(config, 'gamma', 0.99),
++                lambda_=getattr(config, 'lambda_', 0.95),
++                clip_param=getattr(config, 'clip_param', 0.2),
++                vf_loss_coeff=getattr(config, 'vf_loss_coeff', 0.5),
++                entropy_coeff=getattr(config, 'entropy_coeff', 0.01),
++                train_batch_size_per_learner=getattr(config, 'train_batch_size', 4000),
++                minibatch_size=getattr(config, 'minibatch_size', 128),
++                num_epochs=getattr(config, 'num_epochs', 4),
++                grad_clip=getattr(config, 'grad_clip', 0.5),
++            )
++            .multi_agent(
++                # CTDE: ALL agents map to the SAME shared policy
++                policies={"shared_policy"},
++                policy_mapping_fn=lambda agent_id, episode, **kwargs: "shared_policy",
++            )
++            .rl_module(
++                # Use custom RLModule that follows multigrid_network.py architecture.
++                # RLlib auto-wraps this in a MultiRLModule for multi-agent.
++                rl_module_spec=RLModuleSpec(
++                    module_class=MultiGridPPORLModule,
++                    model_config={
++                        "kernel_size": config.kernel_size,
++                        "fc_direction": config.fc_direction,
++                        "n_agents": env.n_agents,
++                        "use_local_obs": self.use_local_obs,
++                    },
++                ),
++            )
++        )
++        # Build the algorithm
++        if training:
++            self.algo = self.algo_config.build_algo()
++
++    def get_agent_state(self, state, agent_id):
++        """Extract a single agent's raw observation from the multi-agent state.
++
++        Args:
++            state: dict from multigrid env with 'image' (list) and 'direction' (list)
++            agent_id: integer agent index
++        Returns:
++            dict with 'image' (raw for visualization) and 'direction'
++        """
++        return {
++            'image': np.array(state['image'][agent_id], dtype=np.uint8),
++            'direction': np.array(state['direction'], dtype=np.uint8),
++        }
++
++    def _encode_agent_obs(self, state, agent_id):
++        """Encode agent observation in the same format as MultiGridRLlibEnv."""
++        from multigrid_rllib_env import NUM_DIRECTIONS
++        image = np.array(state['image'][agent_id], dtype=np.uint8)
++        directions = state['direction']
++        h, w = image.shape[0], image.shape[1]
++        if self.use_local_obs:
++            dir_onehot = np.zeros(NUM_DIRECTIONS, dtype=np.float32)
++            dir_onehot[int(directions[agent_id])] = 1.0
++        else:
++            dir_onehot = np.zeros(self.n_agents * NUM_DIRECTIONS, dtype=np.float32)
++            for a, d in enumerate(directions):
++                dir_onehot[a * NUM_DIRECTIONS + int(d)] = 1.0
++        dir_channels = np.broadcast_to(
++            dir_onehot[np.newaxis, np.newaxis, :], (h, w, len(dir_onehot))
++        ).copy()
++        return np.concatenate(
++            [image.astype(np.float32), dir_channels], axis=-1
++        )
++
++    def get_actions(self, state):
++        """Get actions for all agents using the shared RLlib policy.
++
++        Each agent acts based on its own observation (decentralized execution).
++        """
++        actions = []
++        for i in range(self.n_agents):
++            encoded_obs = self._encode_agent_obs(state, i)
++            action = self.algo.compute_single_action(
++                encoded_obs,
++                policy_id="shared_policy",
++            )
++            actions.append(int(action))
++        return actions
++
++    def run_one_episode(self, env, episode, log=True, train=True,
++                        save_model=True, visualize=False):
++        """Run a single episode manually for evaluation/visualization.
++
++        This method steps through the environment using the trained RLlib policy.
++        It does NOT train - training happens in algo.train().
++        """
++        state = env.reset()
++        done = False
++        t = 0
++        rewards = []
+ 
+         if visualize:
+             viz_data = self.init_visualization_data(env, state)
+ 
+-        raise NotImplementedError("What needs to be initialized here?")
+         while not done:
+             self.total_steps += 1
+-            # TODO: implement me
+-            raise NotImplementedError("What should go here?")
++            t += 1
++
++            # Each agent selects action from shared policy using own observation
++            actions = self.get_actions(state)
++
++            # Step the environment
++            next_state, reward_list, done, info = env.step(actions)
++
++            # Record per-agent rewards for this timestep
++            rewards.append(reward_list)
+ 
+             if visualize:
+-                viz_data = self.add_visualization_data(viz_data, env, state, actions, next_state)
++                viz_data = self.add_visualization_data(
++                    viz_data, env, state, actions, next_state)
+ 
+-            raise NotImplementedError("What happens here?")
++            # Advance state
++            state = next_state
++
++        rewards = np.array(rewards)  # shape: (T, n_agents)
+ 
+         # Logging and checkpointing
+-        if log: self.log_one_episode(episode, t, rewards)
++        if log:
++            self.log_one_episode(episode, t, rewards)
+         self.print_terminal_output(episode, np.sum(rewards))
+-        self.save_model_checkpoints(episode)
++        if save_model:
++            self.save_model_checkpoints(episode)
+ 
+         if visualize:
+-            viz_data['rewards'] = np.array(rewards)
++            viz_data['rewards'] = rewards
+             return viz_data
+ 
++    def train(self, env):
++        """Main training loop using RLlib's algo.train().
++
++        Periodically runs manual evaluation episodes for visualization.
++        """
++        n_episodes = getattr(self.config, 'n_episodes', 100000)
++        visualize_every = getattr(self.config, 'visualize_every', 10000)
++        save_every = getattr(self.config, 'save_model_episode', 5000)
++        log_every = getattr(self.config, 'log_episode', 100)
++        print_every = getattr(self.config, 'print_every', 50)
++
++        # Estimate how many algo.train() iterations we need.
++        # Each train() call collects train_batch_size steps.
++        # With max_steps=100 per episode, that's ~40 episodes per train call.
++        train_batch_size = getattr(self.config, 'train_batch_size', 4000)
++        est_episodes_per_iter = max(1, train_batch_size // 100)
++
++        iteration = 0
++        while self.total_episodes < n_episodes:
++            iteration += 1
++
++            # --- RLlib training step (centralized training) ---
++            result = self.algo.train()
++
++            # Extract metrics from RLlib results
++            episodes_this_iter = result.get(
++                "num_episodes_lifetime", self.total_episodes + est_episodes_per_iter
++            ) - self.total_episodes
++            if episodes_this_iter <= 0:
++                episodes_this_iter = est_episodes_per_iter
++            self.total_episodes += episodes_this_iter
++            self.total_steps = result.get("num_env_steps_sampled_lifetime", self.total_steps)
++
++            # Extract reward info
++            env_runners = result.get("env_runners", {})
++            mean_reward = env_runners.get("episode_return_mean", 0.0)
++            episode_len = env_runners.get("episode_len_mean", 0.0)
++            agent_returns = env_runners.get("agent_episode_returns_mean", {})
++
++            # Log to wandb
++            if self.total_episodes % log_every < episodes_this_iter:
++                log_data = {
++                    "episode/x_axis": self.total_episodes,
++                    "episode/collective_reward_mean": mean_reward,
++                    "episode/episode_length_mean": episode_len,
++                    "step/x_axis": self.total_steps,
++                    "step/collective_reward_mean": mean_reward,
++                }
++                # Log per-agent rewards
++                for agent_id, agent_reward in agent_returns.items():
++                    log_data[f"episode/{agent_id}_reward_mean"] = agent_reward
++                wandb.log(log_data)
++
++            # Print progress
++            if iteration % max(1, print_every // est_episodes_per_iter) == 0:
++                agent_str = " | ".join(
++                    f"{aid}: {r:.3f}" for aid, r in sorted(agent_returns.items())
++                )
++                print(
++                    f"Total steps: {self.total_steps} \t "
++                    f"Episodes: ~{self.total_episodes} \t "
++                    f"Mean reward: {mean_reward:.3f} \t "
++                    f"Mean ep len: {episode_len:.1f} \t "
++                    f"Per-agent: [{agent_str}]"
++                )
++
++            # Save checkpoint
++            if self.total_episodes % save_every < episodes_this_iter:
++                checkpoint_dir = self.algo.save()
++                print(f"Checkpoint saved at episode ~{self.total_episodes}: {checkpoint_dir}")
++
++            # Visualization episode
++            if (self.total_episodes % visualize_every < episodes_this_iter
++                    and self.total_episodes > 0):
++                print(f"Running visualization at episode ~{self.total_episodes}...")
++                viz_data = self.run_one_episode(
++                    self._raw_env, self.total_episodes, log=False,
++                    train=False, save_model=False, visualize=True)
++                self.visualize(
++                    self._raw_env,
++                    self.config.mode + '_training_step' + str(self.total_episodes),
++                    viz_data=viz_data)
++
++        env.close()
++        self.algo.stop()
++
++    def log_one_episode(self, episode, t, rewards):
++        """Log a single episode's metrics to wandb."""
++        collective_reward = np.sum(rewards)
++        per_agent_rewards = np.sum(rewards, axis=0)
++
++        log_data = {
++            "episode/x_axis": episode,
++            "episode/collective_reward": collective_reward,
++            "episode/episode_length": t,
++        }
++        for i in range(self.n_agents):
++            log_data[f"episode/agent_{i}_reward"] = per_agent_rewards[i]
++
++        wandb.log(log_data)
++
+     def save_model_checkpoints(self, episode):
+-        if episode % self.config.save_model_episode == 0:
+-            for i in range(self.n_agents):
+-                self.agents[i].save_model()
++        if episode % self.config.save_model_episode == 0 and episode > 0:
++            checkpoint_dir = self.algo.save()
++            print(f"Checkpoint saved at episode {episode}: {checkpoint_dir}")
+ 
+     def print_terminal_output(self, episode, total_reward):
+         if episode % self.config.print_every == 0:
+@@ -64,8 +322,8 @@ class MultiAgent():
+             'agents_partial_images': [],
+             'actions': [],
+             'full_images': [],
+-            'predicted_actions': None
+-            }
++            'predicted_actions': None,
++        }
+         viz_data['full_images'].append(env.render('rgb_array'))
+ 
+         if self.model_others:
+@@ -79,39 +337,23 @@ class MultiAgent():
+         viz_data['actions'].append(actions)
+         viz_data['agents_partial_images'].append(
+             [env.get_obs_render(
+-                self.get_agent_state(state, i)['image']) for i in range(self.n_agents)])
++                self.get_agent_state(state, i)['image'])
++             for i in range(self.n_agents)])
+         viz_data['full_images'].append(env.render('rgb_array'))
+         if self.model_others:
+-            viz_data['predicted_actions'].append(self.get_action_predictions(next_state))
++            viz_data['predicted_actions'].append(
++                self.get_action_predictions(next_state))
+         return viz_data
+-        
+-    def update_models(self):
+-        # Don't update model until you've taken enough steps in env
+-        if self.total_steps > self.config.initial_memory: 
+-            if self.total_steps % self.config.update_every == 0: # How often to update model
+-                raise NotImplementedError("Figure out how to actually update / train models!")
+-    
+-    def train(self, env):
+-        for episode in range(self.config.n_episodes):
+-            if episode % self.config.visualize_every == 0 and not (self.debug and episode == 0):
+-                viz_data = self.run_one_episode(env, episode, visualize=True)
+-                self.visualize(env, self.config.mode + '_training_step' + str(episode), 
+-                               viz_data=viz_data)
+-            else:
+-                self.run_one_episode(env, episode)
+-
+-        env.close()
+-        return
+ 
+     def visualize(self, env, mode, video_dir='videos', viz_data=None):
+         if not viz_data:
+             viz_data = self.run_one_episode(
+-                env, episode=0, log=False, train=False, save_model=False, visualize=True)
+-            env.close()
++                env, episode=0, log=False, train=False, save_model=False,
++                visualize=True)
+ 
+-        video_path = os.path.join(*[video_dir, self.config.experiment_name, self.config.model_name])
++        video_path = os.path.join(
++            video_dir, self.config.experiment_name, self.config.model_name)
+ 
+-        # Set up directory.
+         if not os.path.exists(video_path):
+             os.makedirs(video_path)
+ 
+@@ -122,29 +364,30 @@ class MultiAgent():
+ 
+         traj_len = len(viz_data['rewards'])
+         for t in range(traj_len):
+-            self.visualize_one_frame(t, viz_data, action_dict, video_path, self.config.model_name)
++            self.visualize_one_frame(
++                t, viz_data, action_dict, video_path, self.config.model_name)
+             print('Frame {}/{}'.format(t, traj_len))
+ 
+         make_video(video_path, mode + '_trajectory_video')
+ 
+-    def visualize_one_frame(self, t, viz_data, action_dict, video_path, model_name):
+-        plot_single_frame(t, 
+-                          viz_data['full_images'][t], 
+-                          viz_data['agents_partial_images'][t], 
+-                          viz_data['actions'][t], 
+-                          viz_data['rewards'], 
+-                          action_dict, 
+-                          video_path, 
+-                          self.config.model_name, 
+-                          predicted_actions=viz_data['predicted_actions'], 
+-                          all_actions=viz_data['actions'])
++    def visualize_one_frame(self, t, viz_data, action_dict, video_path,
++                            model_name):
++        plot_single_frame(
++            t,
++            viz_data['full_images'][t],
++            viz_data['agents_partial_images'][t],
++            viz_data['actions'][t],
++            viz_data['rewards'],
++            action_dict,
++            video_path,
++            self.config.model_name,
++            predicted_actions=viz_data['predicted_actions'],
++            all_actions=viz_data['actions'])
+ 
+     def load_models(self, model_path=None):
+-        for i in range(self.n_agents):
+-            if model_path is not None:
+-                self.agents[i].load_model(save_path=model_path + '_agent_' + str(i))
+-            else:
+-                # Use agents' default model path
+-                self.agents[i].load_model()
+-
+-
++        """Load a saved RLlib checkpoint."""
++        if model_path is not None:
++            self.algo = self.algo_config.build_algo()
++            self.algo.restore(model_path)
++        else:
++            print("No model path provided, using current algo state.")
+diff --git a/utils.py b/utils.py
+index 7d74dad..0a63ac5 100644
+--- a/utils.py
++++ b/utils.py
+@@ -1,7 +1,10 @@
+ import gym
+ from matplotlib.gridspec import GridSpec
+ from matplotlib import pyplot as plt
+-from moviepy.editor import *
++try:
++    from moviepy.editor import ImageClip, concatenate_videoclips
++except ImportError:
++    from moviepy import ImageClip, concatenate_videoclips
+ import numpy as np
+ import os
+ import random
