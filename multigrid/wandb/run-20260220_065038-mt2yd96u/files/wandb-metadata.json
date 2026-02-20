@@ -1,0 +1,73 @@
+{
+  "os":  "Linux-6.8.0-90-generic-x86_64-with-glibc2.39",
+  "python":  "CPython 3.10.19",
+  "startedAt":  "2026-02-20T06:50:38.226041Z",
+  "args":  [
+    "--algorithm",
+    "IPPO",
+    "--mode",
+    "ppo",
+    "--seed",
+    "42",
+    "--wandb_project",
+    "multigrid-ippo",
+    "--save_path",
+    "//checkpoints/ippo"
+  ],
+  "program":  "/home/brianko/test/multigrid/main.py",
+  "codePath":  "multigrid/main.py",
+  "codePathLocal":  "main.py",
+  "git":  {
+    "remote":  "https://github.com/ko120/mrl.git",
+    "commit":  "7df94f097430d6ad9da57f65eb373cb68aef1cea"
+  },
+  "email":  "ko120@purdue.edu",
+  "root":  "/home/brianko/test/multigrid",
+  "host":  "huan-c4140-server-3",
+  "executable":  "/home/brianko/miniconda3/envs/rlib/bin/python",
+  "cpu_count":  40,
+  "cpu_count_logical":  80,
+  "gpu":  "Tesla V100-SXM2-16GB",
+  "gpu_count":  4,
+  "disk":  {
+    "/":  {
+      "total":  "368766496768",
+      "used":  "36103999488"
+    }
+  },
+  "memory":  {
+    "total":  "404272680960"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "Tesla V100-SXM2-16GB",
+      "memoryTotal":  "17179869184",
+      "cudaCores":  5120,
+      "architecture":  "Volta",
+      "uuid":  "GPU-c1336362-1a12-45dd-8d3f-d2011d6f51ae"
+    },
+    {
+      "name":  "NVIDIA Graphics Device",
+      "memoryTotal":  "17179869184",
+      "cudaCores":  5120,
+      "architecture":  "Volta",
+      "uuid":  "GPU-1c6effec-22d4-17fd-fdf1-7ce10166132e"
+    },
+    {
+      "name":  "Tesla V100-SXM2-16GB",
+      "memoryTotal":  "17179869184",
+      "cudaCores":  5120,
+      "architecture":  "Volta",
+      "uuid":  "GPU-698a9283-60ee-cc64-7d87-4e33f6fabc82"
+    },
+    {
+      "name":  "Tesla V100-SXM2-16GB",
+      "memoryTotal":  "17179869184",
+      "cudaCores":  5120,
+      "architecture":  "Volta",
+      "uuid":  "GPU-1ad11bb9-50d4-6b9d-22f8-fc8c33180e56"
+    }
+  ],
+  "cudaVersion":  "13.0",
+  "writerId":  "cgldz1u99ljgc69axt06881xnmowddeo"
+}

@@ -1,11 +1,13 @@
 #!/bin/bash
 
+export CUDA_VISIBLE_DEVICES=1
+
 # Run MAPPO (shared direction info)
-python main.py --algorithm MAPPO --mode ppo --seed 42 --wandb_project multigrid-ippo --save_path /checkpoints/mappo &
-MAPPO_PID=$!
+python main.py --algorithm MAPPO --mode ppo --seed 42 --wandb_project multigrid-ippo --save_path /checkpoints/mappo --backward true&
+# MAPPO_PID=$!
 
 # Run IPPO (local obs only)
-python main.py --algorithm IPPO --mode ppo --seed 42 --wandb_project multigrid-ippo --save_path //checkpoints/ippo &
+python main.py --algorithm IPPO --mode ppo --seed 42 --wandb_project multigrid-ippo --save_path //checkpoints/ippo --backward true&
 IPPO_PID=$!
 
 echo "MAPPO PID: $MAPPO_PID"

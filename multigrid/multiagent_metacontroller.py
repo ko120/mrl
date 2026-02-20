@@ -23,8 +23,6 @@ from networks.multigrid_ppo_learner import MultiGridPPOLearner
 
 from multigrid_rllib_env import MultiGridRLlibEnv
 from utils import plot_single_frame, make_video
-import pdb 
-
 class MultiAgent():
     """Meta-agent that uses RLlib PPO to train multiple agents with a shared
     policy (CTDE - Centralized Training, Decentralized Execution).
@@ -60,7 +58,7 @@ class MultiAgent():
         )
 
         # Configure RLlib PPO - all agents share one policy (CTDE)
-        num_env_runners = getattr(config, 'num_env_runners', 1)
+        num_env_runners = getattr(config, 'num_env_runners', 0)
         self.algo_config = (
             PPOConfig()
             .api_stack(
@@ -73,7 +71,7 @@ class MultiAgent():
             )
             .learners(
                 learner_class=MultiGridPPOLearner,
-                num_gpus_per_learner=1,  # Use 1 GPU for training
+                num_gpus_per_learner=1,
             )
             .training(
                 lr=getattr(config, 'lr', 0.0003),
@@ -85,8 +83,7 @@ class MultiAgent():
                 train_batch_size_per_learner=getattr(config, 'train_batch_size', 4000),
                 minibatch_size=getattr(config, 'minibatch_size', 128),
                 num_epochs=getattr(config, 'num_epochs', 4),
-                grad_clip=getattr(config, 'grad_clip', 0.5),
-            )
+                grad_clip=getattr(config, 'grad_clip', 0.5),)
             .multi_agent(
                 # CTDE: ALL agents map to the SAME shared policy
                 policies={"shared_policy"},
@@ -102,6 +99,8 @@ class MultiAgent():
                         "fc_direction": config.fc_direction,
                         "n_agents": env.n_agents,
                         "algorithm": getattr(config, "algorithm", "IPPO"),
+                        "share_backbone": getattr(config, "share_backbone", False),
+                        "backward": getattr(config, "backward", False),
                     },
                 ),
             )
@@ -299,16 +298,16 @@ class MultiAgent():
                 print(f"Checkpoint saved at episode ~{self.total_episodes}: {checkpoint_dir}")
 
             # Visualization episode
-            if (self.total_episodes % visualize_every < episodes_this_iter
-                    and self.total_episodes > 0):
-                print(f"Running visualization at episode ~{self.total_episodes}...")
-                viz_data = self.run_one_episode(
-                    self._raw_env, self.total_episodes, log=False,
-                    train=False, save_model=False, visualize=True)
-                self.visualize(
-                    self._raw_env,
-                    self.config.mode + '_training_step' + str(self.total_episodes),
-                    viz_data=viz_data)
+            # if (self.total_episodes % visualize_every < episodes_this_iter
+            #         and self.total_episodes > 0):
+            #     print(f"Running visualization at episode ~{self.total_episodes}...")
+            #     viz_data = self.run_one_episode(
+            #         self._raw_env, self.total_episodes, log=False,
+            #         train=False, save_model=False, visualize=True)
+            #     self.visualize(
+            #         self._raw_env,
+            #         self.config.mode + '_training_step' + str(self.total_episodes),
+            #         viz_data=viz_data)
 
         env.close()
 

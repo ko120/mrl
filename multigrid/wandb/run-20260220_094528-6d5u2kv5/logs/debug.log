@@ -1,0 +1,26 @@
+2026-02-20 09:45:28,703 INFO    MainThread:2272143 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-02-20 09:45:28,703 INFO    MainThread:2272143 [wandb_setup.py:_flush():81] Configure stats pid to 2272143
+2026-02-20 09:45:28,703 INFO    MainThread:2272143 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-02-20 09:45:28,703 INFO    MainThread:2272143 [wandb_init.py:setup_run_log_directory():717] Logging user logs to /home/brianko/test/multigrid/wandb/run-20260220_094528-6d5u2kv5/logs/debug.log
+2026-02-20 09:45:28,703 INFO    MainThread:2272143 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to /home/brianko/test/multigrid/wandb/run-20260220_094528-6d5u2kv5/logs/debug-internal.log
+2026-02-20 09:45:28,703 INFO    MainThread:2272143 [wandb_init.py:init():844] calling init triggers
+2026-02-20 09:45:28,703 INFO    MainThread:2272143 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'mode': 'ppo', 'load_model_start_path': 'models/ppo', 'gamma': 0.99, 'lr': 0.001, 'train_batch_size': 4000, 'minibatch_size': 256, 'num_epochs': 4, 'clip_param': 0.2, 'vf_loss_coeff': 0.5, 'entropy_coeff': 0.01, 'lambda_': 0.95, 'use_gae': True, 'grad_clip': 0.5, 'model_others': False, 'share_backbone': False, 'num_env_runners': 0, 'log_episode': 100, 'print_every': 1000, 'save_model_episode': 15000, 'visualize_every': 30000, 'n_episodes': 30000, 'domain': 'MultiGrid-Cluttered-Fixed-15x15', 'eps_decay': 1000000, 'eps_end': 0.01, 'seed': 42, 'rl_test_episodes': 100000, 'eps_start': 1.0, 'target_update': 1000, 'initial_memory': 2000, 'memory_size': 5000000, 'n_actions': 7, 'metacontroller': 'multiagent', 'batch_size': 256, 'update_every': 50, 'version': 'default', 'dqn_loss_weight': 1, 'fc_direction': 8, 'cumulants': 64, 'filters': 32, 'kernel_size': 3, 'fc': 256, 'experiment_name': 'MultiGrid', '_wandb': {'code_path': 'code/multigrid/main.py'}}
+2026-02-20 09:45:28,703 INFO    MainThread:2272143 [wandb_init.py:init():892] starting backend
+2026-02-20 09:45:28,950 INFO    MainThread:2272143 [wandb_init.py:init():895] sending inform_init request
+2026-02-20 09:45:28,953 INFO    MainThread:2272143 [wandb_init.py:init():903] backend started and connected
+2026-02-20 09:45:28,955 INFO    MainThread:2272143 [wandb_init.py:init():973] updated telemetry
+2026-02-20 09:45:28,959 INFO    MainThread:2272143 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-02-20 09:45:29,576 INFO    MainThread:2272143 [wandb_init.py:init():1042] starting run threads in backend
+2026-02-20 09:45:29,766 INFO    MainThread:2272143 [wandb_run.py:_console_start():2524] atexit reg
+2026-02-20 09:45:29,766 INFO    MainThread:2272143 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-02-20 09:45:29,766 INFO    MainThread:2272143 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-02-20 09:45:29,766 INFO    MainThread:2272143 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-02-20 09:45:29,769 INFO    MainThread:2272143 [wandb_init.py:init():1082] run started, returning control to user process
+2026-02-20 09:45:29,769 INFO    MainThread:2272143 [wandb_run.py:_config_callback():1403] config_cb None None {'model_name': 'ppo_seed_42_domain_MultiGrid-Cluttered-Fixed-15x15_version_default', 'load_model_path': 'models/ppo_seed_42_domain_MultiGrid-Cluttered-Fixed-15x15_version_default', 'wandb_project': 'multigrid-ippo-MultiGrid-Cluttered-Fixed-15x15'}
+2026-02-20 09:45:30,044 INFO    MainThread:2272143 [wandb_config.py:__setitem__():155] [no run ID] config set algorithm = MAPPO - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7fe5782a3ca0>>
+2026-02-20 09:45:30,044 INFO    MainThread:2272143 [wandb_run.py:_config_callback():1403] config_cb algorithm MAPPO None
+2026-02-20 09:45:30,045 INFO    MainThread:2272143 [wandb_config.py:__setitem__():155] [no run ID] config set save_path = /checkpoints/mappo - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7fe5782a3ca0>>
+2026-02-20 09:45:30,045 INFO    MainThread:2272143 [wandb_run.py:_config_callback():1403] config_cb save_path /checkpoints/mappo None
+2026-02-20 09:45:30,045 INFO    MainThread:2272143 [wandb_config.py:__setitem__():155] [no run ID] config set backward = True - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7fe5782a3ca0>>
+2026-02-20 09:45:30,045 INFO    MainThread:2272143 [wandb_run.py:_config_callback():1403] config_cb backward True None
