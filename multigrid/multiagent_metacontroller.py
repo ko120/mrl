@@ -238,9 +238,9 @@ class MultiAgent():
 
         # Estimate how many algo.train() iterations we need.
         # Each train() call collects train_batch_size steps.
-        # With max_steps=100 per episode, that's ~40 episodes per train call.
         train_batch_size = getattr(self.config, 'train_batch_size', 4000)
-        est_episodes_per_iter = max(1, train_batch_size // 100)
+        env_max_steps = getattr(self._raw_env, 'max_steps', 100)
+        est_episodes_per_iter = max(1, train_batch_size // env_max_steps)
 
         iteration = 0
         while self.total_episodes < n_episodes:

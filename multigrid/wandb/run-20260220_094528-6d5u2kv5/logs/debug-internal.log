@@ -5,3 +5,8 @@
 {"time":"2026-02-20T09:45:29.174578143Z","level":"INFO","msg":"writer: started","stream_id":"6d5u2kv5"}
 {"time":"2026-02-20T09:45:29.174578953Z","level":"INFO","msg":"sender: started","stream_id":"6d5u2kv5"}
 {"time":"2026-02-20T09:45:29.57778012Z","level":"ERROR","msg":"git repo not found","error":"repository does not exist"}
+{"time":"2026-02-20T10:43:12.860905714Z","level":"INFO","msg":"stream: closing","id":"6d5u2kv5"}
+{"time":"2026-02-20T10:43:13.379178406Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-20T10:43:13.506610502Z","level":"INFO","msg":"handler: closed","stream_id":"6d5u2kv5"}
+{"time":"2026-02-20T10:43:13.506675368Z","level":"INFO","msg":"sender: closed","stream_id":"6d5u2kv5"}
+{"time":"2026-02-20T10:43:13.506692201Z","level":"INFO","msg":"stream: closed","id":"6d5u2kv5"}

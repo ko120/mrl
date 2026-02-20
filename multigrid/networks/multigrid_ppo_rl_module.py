@@ -56,13 +56,19 @@ class MultiGridPPORLModule(TorchRLModule, ValueFunctionAPI):
         # Shared backbone: local image CNN + local direction FC
         # Used by both actor and critic when share_backbone=True
         # ------------------------------------------------------------------
+        # Dynamically compute flat CNN output size to support any obs spatial size.
+        # Two conv layers with kernel_size (no padding): H_out = H - 2*(kernel_size-1)
+        obs_h = self.observation_space.shape[0]
+        h_out = obs_h - 2 * (kernel_size - 1)
+        cnn_flat_size = 64 * h_out * h_out
+
         self.image_layers = nn.Sequential(
             nn.Conv2d(_IMG_CH, 32, (kernel_size, kernel_size)),
             nn.LeakyReLU(),
             nn.Conv2d(32, 64, (kernel_size, kernel_size)),
             nn.LeakyReLU(),
             nn.Flatten(),
-            nn.Linear(64, 64),
+            nn.Linear(cnn_flat_size, 64),
             nn.LeakyReLU(),
         )
         self.pi_direction_layers = nn.Sequential(
@@ -84,7 +90,7 @@ class MultiGridPPORLModule(TorchRLModule, ValueFunctionAPI):
                 nn.Conv2d(32, 64, (kernel_size, kernel_size)),
                 nn.LeakyReLU(),
                 nn.Flatten(),
-                nn.Linear(64, 64),
+                nn.Linear(cnn_flat_size, 64),
                 nn.LeakyReLU(),
             )
             self.vf_direction_layers = nn.Sequential(

@@ -33,4 +33,471 @@ The `TBXLogger interface is deprecated in favor of the `ray.tune.tensorboardx.TB
   deprecation(
 /home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
   deprecation(
-/home/brianko/miniconda3/envs/rlib/lib
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+Total steps: 100000.0 	 Episodes: ~1000 	 Mean reward: 3.083 	 Mean ep len: 100.0 	 Per-agent: [agent_0: 1.111 | agent_1: 1.132 | agent_2: 0.840]
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+Total steps: 200000.0 	 Episodes: ~2000 	 Mean reward: 5.292 	 Mean ep len: 100.0 	 Per-agent: [agent_0: 1.758 | agent_1: 1.675 | agent_2: 1.860]
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+Total steps: 300000.0 	 Episodes: ~3000 	 Mean reward: 5.008 	 Mean ep len: 100.0 	 Per-agent: [agent_0: 1.720 | agent_1: 1.624 | agent_2: 1.664]
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+Total steps: 400000.0 	 Episodes: ~4000 	 Mean reward: 5.371 	 Mean ep len: 100.0 	 Per-agent: [agent_0: 1.772 | agent_1: 1.875 | agent_2: 1.724]
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+Total steps: 500000.0 	 Episodes: ~5000 	 Mean reward: 4.962 	 Mean ep len: 100.0 	 Per-agent: [agent_0: 1.528 | agent_1: 1.882 | agent_2: 1.552]
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+Total steps: 600000.0 	 Episodes: ~6000 	 Mean reward: 4.997 	 Mean ep len: 100.0 	 Per-agent: [agent_0: 1.641 | agent_1: 1.724 | agent_2: 1.632]
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+Total steps: 700000.0 	 Episodes: ~7000 	 Mean reward: 4.903 	 Mean ep len: 100.0 	 Per-agent: [agent_0: 1.546 | agent_1: 1.508 | agent_2: 1.848]
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+Total steps: 800000.0 	 Episodes: ~8000 	 Mean reward: 4.825 	 Mean ep len: 100.0 	 Per-agent: [agent_0: 1.572 | agent_1: 1.615 | agent_2: 1.638]
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+Total steps: 900000.0 	 Episodes: ~9000 	 Mean reward: 5.476 	 Mean ep len: 100.0 	 Per-agent: [agent_0: 1.557 | agent_1: 1.850 | agent_2: 2.069]
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+/home/brianko/miniconda3/envs/rlib/lib/python3.10/site-packages/gym/utils/seeding.py:47: DeprecationWarning: [33mWARN: Function `rng.randint(low, [high, size, dtype])` is marked as deprecated and will be removed in the future. Please use `rng.integers(low, [high, size, dtype])` instead.[0m
+  deprecation(
+[0m

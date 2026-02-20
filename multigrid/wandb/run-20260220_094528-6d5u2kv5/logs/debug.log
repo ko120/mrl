@@ -24,3 +24,5 @@ config: {'mode': 'ppo', 'load_model_start_path': 'models/ppo', 'gamma': 0.99, 'l
 2026-02-20 09:45:30,045 INFO    MainThread:2272143 [wandb_run.py:_config_callback():1403] config_cb save_path /checkpoints/mappo None
 2026-02-20 09:45:30,045 INFO    MainThread:2272143 [wandb_config.py:__setitem__():155] [no run ID] config set backward = True - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7fe5782a3ca0>>
 2026-02-20 09:45:30,045 INFO    MainThread:2272143 [wandb_run.py:_config_callback():1403] config_cb backward True None
+2026-02-20 10:43:12,860 INFO    wandb-AsyncioManager-main:2272143 [service_client.py:_forward_responses():134] Reached EOF.
+2026-02-20 10:43:12,860 INFO    wandb-AsyncioManager-main:2272143 [mailbox.py:close():155] Closing mailbox, abandoning 1 handles.
