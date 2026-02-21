@@ -1,8 +1,11 @@
 import argparse
+import os
 import random
 import torch
 import numpy as np
 import wandb
+
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 import utils
 from multiagent_metacontroller import MultiAgent
@@ -44,7 +47,7 @@ def parse_args():
         '--algorithm', type=str, default=None, choices=['IPPO', 'MAPPO'],
         help="Algorithm: IPPO (local obs) or MAPPO (shared direction info). Overrides config.")
     parser.add_argument(
-        '--backward', type=bool, default=False)
+        '--backward', action="store_true")
     return parser.parse_args()
 
 
@@ -79,7 +82,8 @@ def main(args):
     if args.algorithm:
         config.algorithm = args.algorithm
     if args.save_path:
-        config.save_path = args.save_path
+        # Resolve save_path relative to project root (avoids root-level permission errors)
+        config.save_path = os.path.join(PROJECT_ROOT, args.save_path.lstrip('/'))
     if args.backward:
         config.backward = args.backward
 

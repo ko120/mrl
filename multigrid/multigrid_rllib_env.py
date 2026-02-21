@@ -43,7 +43,7 @@ class MultiGridRLlibEnv(MultiAgentEnv):
         #   global dir     (n_agents*4)  - MAPPO critic
         agent_view = self._env.agent_view_size
         obs_channels = (3 + self.n_agents * 3) + (NUM_DIRECTIONS + self.n_agents * NUM_DIRECTIONS)
-
+        # local image + global images + local dir one-hot + global dir one-hot
         single_obs_space = gymnasium.spaces.Box(
             low=0.0, high=255.0,
             shape=(agent_view, agent_view, obs_channels),
@@ -96,7 +96,6 @@ class MultiGridRLlibEnv(MultiAgentEnv):
         dir_channels = np.broadcast_to(
             dir_onehot[np.newaxis, np.newaxis, :], (h, w, len(dir_onehot))
         ).copy()
-
         return np.concatenate([local_img, global_imgs, dir_channels], axis=-1)
 
     def _split_obs(self, obs):

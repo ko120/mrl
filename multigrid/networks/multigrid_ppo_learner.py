@@ -11,8 +11,9 @@ both objectives influence the shared CNN.
 import torch
 from ray.rllib.algorithms.ppo.torch.ppo_torch_learner import PPOTorchLearner
 from ray.rllib.connectors.connector_v2 import ConnectorV2
+from ray.rllib.core.columns import Columns
 from ray.rllib.utils.annotations import override
-import pdb 
+import pdb
 
 class BackwardEpisode(ConnectorV2):
     """Reverses the batch along the time axis after GAE.
@@ -25,9 +26,11 @@ class BackwardEpisode(ConnectorV2):
 
     def __call__(self, *, rl_module, batch, episodes, explore=None, shared_data=None, **kwargs):
         for module_batch in batch.values():
+
             for key, val in module_batch.items():
                 if isinstance(val, torch.Tensor):
                     module_batch[key] = val.flip(0)
+  
         return batch
 
 
@@ -48,6 +51,7 @@ class MultiGridPPOLearner(PPOTorchLearner):
             )
             if backward:
                 self._learner_connector.append(BackwardEpisode())
+
 
     @override(PPOTorchLearner)
     def configure_optimizers_for_module(self, module_id, **kwargs):

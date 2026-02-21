@@ -81,9 +81,10 @@ class MultiAgent():
                 vf_loss_coeff=getattr(config, 'vf_loss_coeff', 0.5),
                 entropy_coeff=getattr(config, 'entropy_coeff', 0.01),
                 train_batch_size_per_learner=getattr(config, 'train_batch_size', 4000),
-                minibatch_size=getattr(config, 'minibatch_size', 128),
+                minibatch_size=getattr(config, 'minibatch_size', 250),
                 num_epochs=getattr(config, 'num_epochs', 4),
-                grad_clip=getattr(config, 'grad_clip', 0.5),)
+                grad_clip=getattr(config, 'grad_clip', 0.5),
+                shuffle_batch_per_epoch=getattr(config, 'shuffle_batch_per_epoch', False),)
             .multi_agent(
                 # CTDE: ALL agents map to the SAME shared policy
                 policies={"shared_policy"},
@@ -240,7 +241,7 @@ class MultiAgent():
         # Each train() call collects train_batch_size steps.
         train_batch_size = getattr(self.config, 'train_batch_size', 4000)
         env_max_steps = getattr(self._raw_env, 'max_steps', 100)
-        est_episodes_per_iter = max(1, train_batch_size // env_max_steps)
+        est_episodes_per_iter = max(1, train_batch_size // 100)
 
         iteration = 0
         while self.total_episodes < n_episodes:
